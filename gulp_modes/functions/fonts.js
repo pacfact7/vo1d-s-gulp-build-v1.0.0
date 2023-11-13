@@ -1,6 +1,6 @@
-const gulp = require('gulp'),
-fs = require("fs"),
-path = require("path");
+const gulp = require("gulp"),
+   fs = require("fs"),
+   path = require("path");
 
 function createFontStyles(fontsDir, fontsFile) {
    let fontStyles = ""; // Переменная для хранения стилей шрифтов

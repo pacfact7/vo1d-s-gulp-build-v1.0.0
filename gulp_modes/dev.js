@@ -1,29 +1,27 @@
-const gulp = require("gulp");
-
-// Плагины для HTML
-const fileinclude = require("gulp-file-include");
+const gulp = require("gulp"),
+   fileinclude = require("gulp-file-include");
 
 // Плагины для CSS
-const sass = require("gulp-sass")(require("sass"));
-const sassGlob = require("gulp-sass-glob");
-const sourceMaps = require("gulp-sourcemaps");
+const sass = require("gulp-sass")(require("sass")),
+   sassGlob = require("gulp-sass-glob"),
+   sourceMaps = require("gulp-sourcemaps");
 
 // Плагины для JavaScript
 const webpack = require("webpack-stream");
 
 // Плагины для сервера и управления файлами
-const changed = require("gulp-changed");
-const server = require("gulp-server-livereload");
-const clean = require("gulp-clean");
-const fs = require("fs");
+const changed = require("gulp-changed"),
+   server = require("gulp-server-livereload"),
+   clean = require("gulp-clean"),
+   fs = require("fs");
 
 // Плагины для обработки ошибок
-const plumber = require("gulp-plumber");
-const notify = require("gulp-notify");
+const plumber = require("gulp-plumber"),
+   notify = require("gulp-notify");
 
 // Плагины для шрифтов
-const ttf2woff2 = require("gulp-ttf2woff2");
-const { createFontStyles } = require("./functions/fonts");
+const ttf2woff2 = require("gulp-ttf2woff2"),
+   { createFontStyles } = require("./functions/fonts");
 
 //
 

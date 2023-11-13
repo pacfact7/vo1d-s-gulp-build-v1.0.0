@@ -1,36 +1,36 @@
 const gulp = require("gulp");
 
 // Плагины для HTML
-const fileinclude = require("gulp-file-include");
-const htmlclean = require("gulp-htmlclean");
+const fileinclude = require("gulp-file-include"),
+   htmlclean = require("gulp-htmlclean");
 
 // Плагины для CSS
-const groupCSSMediaQueries = require("gulp-group-css-media-queries");
-const sassGlob = require("gulp-sass-glob");
-const csso = require("gulp-csso");
-const sass = require("gulp-sass")(require("sass"));
-const autoprefixer = require("gulp-autoprefixer");
+const groupCSSMediaQueries = require("gulp-group-css-media-queries"),
+   sassGlob = require("gulp-sass-glob"),
+   csso = require("gulp-csso"),
+   sass = require("gulp-sass")(require("sass")),
+   autoprefixer = require("gulp-autoprefixer");
 
 // Плагины для JavaScript
-const webpack = require("webpack-stream");
-const babel = require("gulp-babel");
+const webpack = require("webpack-stream"),
+   babel = require("gulp-babel");
 
 // Плагины для изображений
 const imagemin = require("gulp-imagemin");
 
 // Плагины для сервера и управления файлами
-const server = require("gulp-server-livereload");
-const changed = require("gulp-changed");
-const clean = require("gulp-clean");
-const fs = require("fs");
+const server = require("gulp-server-livereload"),
+   changed = require("gulp-changed"),
+   clean = require("gulp-clean"),
+   fs = require("fs");
 
 // Плагины для обработки ошибок
-const plumber = require("gulp-plumber");
-const notify = require("gulp-notify");
+const plumber = require("gulp-plumber"),
+   notify = require("gulp-notify");
 
 // Плагины для шрифтов
-const ttf2woff2 = require("gulp-ttf2woff2");
-const { createFontStyles } = require("./functions/fonts");
+const ttf2woff2 = require("gulp-ttf2woff2"),
+   { createFontStyles } = require("./functions/fonts");
 
 //
 
